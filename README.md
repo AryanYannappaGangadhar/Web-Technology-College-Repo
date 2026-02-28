@@ -12,3 +12,5 @@ This Is For College Only Along Wit It Projects and practical
 # practical code for web is same as the above but have a nested <ul> and <ol> in the code and a but tricky for the beginners
 
 # table.html is a code written to show case time table.
+
+# A New File Is Added (Form). This Is Carfted To Show How A Registration Form Is Made That You Have Been Seeing In The College And Many Other Things.
