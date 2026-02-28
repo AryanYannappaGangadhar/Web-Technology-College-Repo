@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+        body{
+            font-family: Arial, sans-serif;
+            background: darkorchid ;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-container {
+            background: darkorchid;
+            padding: 25px;
+            width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        h2{
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        textarea{
+            resize: none;
+        }
+        .gender{
+            display: flex;
+            gap: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            color: black;
+            font-weight: bold;
+        }
+        .gender label{
+            font-weight: normal;
+            cursor: pointer;
+
+        }
+        button{
+            margin-top: 20px;
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover{
+            background: #0056b3;
+        }
+</style>
+</head>
+<body>
+    
+    <div class="form-container">
+        <h2>Student Registration Form</h2>
+
+        <form>
+            <label for="name"> Full Name</label>
+            <input type="text" id="name" placeholder="Enter Full Name" required>
+
+            <label for="address">Address</label>
+            <textarea id="address" rows="3" placeholder="Enter Address" required></textarea>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter Email" required>
+
+            <label for="phone number">Phone Number</label>
+            <input type="phone number" id="phone" placeholder="Enter Phone Number" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter Password" required>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" required>
+
+            <label>Gender</label>
+            <div class="gender">
+                <label><input type="radio" name="gender" required>Male </label>
+                <label><input type="radio" name="gender" required>Female</label>
+                <label><input type="radio" name="gender" required>Other</label>
+            </div>
+
+            <label for="course">Course</label>
+            <select id="course" required>
+                <option value="">Select Course</option>
+                <option>Computer Science</option>
+                <option>Information Technology</option>
+                <option>Bachlor Of Computer Application</option>
+                <option>Master Of Computer Application</option>
+            </select>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
